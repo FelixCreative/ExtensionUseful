@@ -52,12 +52,11 @@ namespace EpplusCoreMVC.Controllers
             // Send tất cả ouput bytes về phía clients
             //Response.Body.Flush();
 
-            // Redirect về luôn trang index <img draggable="false" class="emoji" alt="😀" src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f600.svg" scale="0">
             return RedirectToAction("Index");
         }
 
         /// <summary>
-        /// 1. Instance ExcelPackage()
+        /// 1. Initital ExcelPackage()
         /// 2. Create worksheet
         /// 3. Add header to worksheet
         /// 4. Using loop to fill data for each row
@@ -111,7 +110,7 @@ namespace EpplusCoreMVC.Controllers
 
         /// <summary>
         /// 1. Get info file via FileInfo()
-        /// 2. Instance ExcelPackage() with file info parameter to work with this excel file
+        /// 2. Initital ExcelPackage() with file info parameter to work with this excel file
         /// 3. Get worksheet 
         /// 4. Loop these rows in worksheet and mapping its into object
         /// 5. Add object had already mapped into Database
